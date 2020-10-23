@@ -14,7 +14,6 @@ settings:
     - node : {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
-    - webpack
 
 plugins:
     - "react-hooks"

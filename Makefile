@@ -16,3 +16,6 @@ test-coverage:
 
 lint:
 	npx eslint . --ext js,jsx
+
+lint-fix:
+	npx eslint --fix --ext .js,.jsx .
