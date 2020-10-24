@@ -2,9 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
+import './assets/application.scss';
+import { configureStore } from '@reduxjs/toolkit';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import store from './store';
+import reducers from './slices';
+
+console.log('app -> store');
+const store = configureStore({
+  reducer: reducers,
+  devTools: process.env.NODE_ENV !== 'production',
+});
+console.log('app -> store', store);
 
 ReactDOM.render(
   <Provider store={store}>

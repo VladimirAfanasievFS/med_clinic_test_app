@@ -1,20 +1,18 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
-import tickets, { actions as ticketsActions, asyncActions as ticketsAsyncActions } from './tickets';
-import displayConditions, { actions as displayConditionsActions } from './displayConditions';
+import user, { actions as userActions, asyncActions as userAsyncActions } from './user';
 
 export default combineReducers({
-  tickets,
-  displayConditions,
+
+  user,
 });
 
 const actions = {
-  ...ticketsActions,
-  ...displayConditionsActions,
+  ...userActions,
 };
 
 const asyncActions = {
-  ...ticketsAsyncActions,
+  ...userAsyncActions,
 };
 
 export {

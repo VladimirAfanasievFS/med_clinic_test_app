@@ -34,6 +34,7 @@ export const getTickets = createAsyncThunk(
     }
   },
 );
+
 const slice = createSlice({
   name: 'tickets',
   initialState: {
