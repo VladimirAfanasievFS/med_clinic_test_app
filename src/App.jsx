@@ -1,20 +1,21 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Auth from './containers/auth/Auth';
-import { asyncActions } from './slices';
+import { useSelector } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import Profile from './components/Profile';
+import Auth from './containers/Auth';
+import Registration from './containers/Registration';
 
 const App = () => {
-  const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
-  if (user) {
-    return (
-      <div className="">
-        {user.username}
-        <button type="button" className="btn btn-success" onClick={() => dispatch(asyncActions.logout())}>Logout</button>
-      </div>
-    );
-  }
-  return <Auth />;
+  const isNotSign = !!user;
+  console.log('App -> isNotSign', isNotSign);
+  console.log('App -> user', user);
+  return (
+    <Switch>
+      <Route exact path="/" render={() => <Profile isNotSign={isNotSign} />} />
+      <Route path="/signUp" component={Auth} />
+    </Switch>
+  );
 };
 
 export default App;

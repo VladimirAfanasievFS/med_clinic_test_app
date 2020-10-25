@@ -4,6 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import './assets/application.scss';
 import { configureStore } from '@reduxjs/toolkit';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import reducers from './slices';
@@ -17,7 +18,9 @@ console.log('app -> store', store);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </Provider>,
   document.getElementById('root'),
 );

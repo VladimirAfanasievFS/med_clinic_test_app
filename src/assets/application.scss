@@ -1,5 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
 
+#root{
+  margin: 0 auto;
+  max-width: 1366px;
+  font-family: "Rubik" sans-serif;
+}
 .x-bg-blue {
   background-color: #003B72;
+}
+
+.x-btn-violet {
+  color: #fff;
+  background-color: #7761FF;
+  border-color: #7761FF;
+}
+.x-color-violet {
+  color: #7761FF;
+}
+.x-border-smokey{
+  border-color:#EBE7FF;
+}
+.x-reset-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

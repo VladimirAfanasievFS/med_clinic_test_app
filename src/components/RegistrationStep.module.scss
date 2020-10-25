@@ -1,0 +1,21 @@
+.index{
+    color:#6c757d ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    &_active {
+      background-color: #7761FF;
+      color: white ;
+    }
+  }
+.text{
+    color: #6c757d;
+    &_active {
+      color: #7761FF;
+    }
+  }
+
