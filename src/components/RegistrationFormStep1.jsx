@@ -36,7 +36,7 @@ const RegistrationFormStep1 = ({ setActiveStep }) => {
       {({ isSubmitting }) => (
         <Form className="w-75 mx-auto">
           <div className="form-group">
-            <Field type="text" name="email" className="form-control form-control-lg" placeholder="Почта" />
+            <Field type="text" name="email" className="form-control form-control-lg was-validated" placeholder="Почта" />
             <ErrorMessage name="email" component={customError} />
           </div>
           <div className="form-group">

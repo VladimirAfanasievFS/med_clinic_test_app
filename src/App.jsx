@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import Profile from './components/Profile';
 import Auth from './containers/Auth';
-import Registration from './containers/Registration';
+import RegistrationSuccess from './containers/RegistrationSuccess';
 
 const App = () => {
   const { user } = useSelector((state) => state.user);
@@ -14,6 +14,7 @@ const App = () => {
     <Switch>
       <Route exact path="/" render={() => <Profile isNotSign={isNotSign} />} />
       <Route path="/signUp" component={Auth} />
+      <Route path="/registrationSuccess" component={RegistrationSuccess} />
     </Switch>
   );
 };

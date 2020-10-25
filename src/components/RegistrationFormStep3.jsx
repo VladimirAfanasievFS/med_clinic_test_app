@@ -17,7 +17,7 @@ export default ({ setActiveStep }) => {
         // await dispatch(asyncActions.login(values));
         // history.push('/');
         // history.push('/sign');
-        history.push('/signUp');
+        history.push('/registrationSuccess');
       }}
     >
       {({ errors, touched, isSubmitting }) => (

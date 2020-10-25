@@ -8,6 +8,9 @@
 .x-bg-blue {
   background-color: #003B72;
 }
+.x-bg-light-blue {
+  background-color: #50CAFF;
+}
 
 .x-btn-violet {
   color: #fff;
@@ -27,4 +30,20 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.x-nav-link {
+  color: white;
+}
+.x-nav-item{
+  border-left: 5px solid #003B72;
+  &:hover, &_active{
+    background-color: white;
+    color: #7761FF;
+    border-left: 5px solid #7761FF;
+    cursor: pointer;
+    .x-nav-link {
+      color: #7761FF;
+    }
+  }
 }

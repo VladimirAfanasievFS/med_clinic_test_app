@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import AuthForm from '../components/AuthForm';
 import AuthImg from '../components/AuthImg';
 import PortalHeader from '../components/PortalHeader';
+import RegistrationImg from '../components/RegistrationImg';
 import Registration from './Registration';
 
 const Auth = (props) => {
@@ -20,7 +21,10 @@ const Auth = (props) => {
             </Switch>
           </div>
           <div className="col-4 x-bg-blue">
-            <AuthImg />
+            <Switch>
+              <Route exact path="/signUp" component={AuthImg} />
+              <Route path="/signUp/registration" component={RegistrationImg} />
+            </Switch>
           </div>
         </div>
       </div>
