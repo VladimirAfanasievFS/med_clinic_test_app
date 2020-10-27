@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
-import Profile from './components/Profile';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import Account from './containers/Account';
 import Auth from './containers/Auth';
 import RegistrationSuccess from './containers/RegistrationSuccess';
 
@@ -12,9 +12,10 @@ const App = () => {
   console.log('App -> user', user);
   return (
     <Switch>
-      <Route exact path="/" render={() => <Profile isNotSign={isNotSign} />} />
+      <Route exact path="/" render={() => (!isNotSign ? <Redirect to="/signUp" /> : <Redirect to="/account" />)} />
       <Route path="/signUp" component={Auth} />
       <Route path="/registrationSuccess" component={RegistrationSuccess} />
+      <Route path="/account" component={Account} />
     </Switch>
   );
 };

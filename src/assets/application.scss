@@ -73,10 +73,38 @@ html,body{
   :hover {
       fill:  #7761FF;
   }
-  
-
 }
 
+.x-card:hover{
+    border-color: #50CAFF;
+    cursor: pointer;
+    .x-card-icon{
+      background-color: #50CAFF;
+    } 
+    .x-card-title{
+      border-bottom: 1px solid #50CAFF !important;
+    }
+}
+
+.react-calendar__navigation {
+  background-color: #7761FF;
+
+}
+.react-calendar {
+  width: 100% !important;
+  background: #EBE7FF;
+}
+
+.react-calendar__navigation__label,
+.react-calendar__navigation,
+.react-calendar__navigation__arrow {
+   color: white;
+}
+
+.x-appointsment{
+  max-height: 300px;
+  overflow-y: auto;
+}
 
 
 
