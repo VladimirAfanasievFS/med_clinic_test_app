@@ -1,10 +1,13 @@
 /* eslint-disable import/no-dynamic-require */
 /* eslint-disable global-require */
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { actions } from '../slices';
 
-const Appoinsment = ({ appointsment }) => {
-  console.log('Appoinsment -> appointsment', appointsment);
-  const { dateHuman, address, doctor } = appointsment;
+const Appointment = ({ appointment }) => {
+  const { dateHuman, address, doctor } = appointment;
+  const dispatch = useDispatch();
+  const handleClick = () => dispatch(actions.deleteAppoinstmentWithId(appointment.id));
   return (
     <div className="p-2 ">
       <div className="card h-100">
@@ -18,7 +21,7 @@ const Appoinsment = ({ appointsment }) => {
               <div className="text-secondary ">{doctor.specialty}</div>
             </div>
             <div className="my-auto ml-auto">
-              <button type="button" className="btn x-btn-violet">Отменить</button>
+              <button type="button" className="btn x-btn-violet" onClick={handleClick}>Отменить</button>
             </div>
           </div>
         </div>
@@ -27,4 +30,4 @@ const Appoinsment = ({ appointsment }) => {
 
   );
 };
-export default Appoinsment;
+export default Appointment;

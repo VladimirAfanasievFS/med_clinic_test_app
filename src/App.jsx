@@ -8,8 +8,6 @@ import RegistrationSuccess from './containers/RegistrationSuccess';
 const App = () => {
   const { user } = useSelector((state) => state.user);
   const isNotSign = !!user;
-  console.log('App -> isNotSign', isNotSign);
-  console.log('App -> user', user);
   return (
     <Switch>
       <Route exact path="/" render={() => (!isNotSign ? <Redirect to="/signUp" /> : <Redirect to="/account" />)} />

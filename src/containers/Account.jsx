@@ -1,10 +1,8 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import cn from 'classnames';
 import {
-  Link, NavLink, Redirect, Route, Switch, useLocation,
+  NavLink, Redirect, Route, Switch, useLocation,
 } from 'react-router-dom';
-import { asyncActions } from '../slices';
 import { ReactComponent as profileIcon } from '../assets/profileIcon.svg';
 import { ReactComponent as goodToKnowIcon } from '../assets/goodToKnowIcon.svg';
 import { ReactComponent as MessagesIcon } from '../assets/messagesIcon.svg';
@@ -12,9 +10,8 @@ import { ReactComponent as testIcon } from '../assets/testIcon.svg';
 import { ReactComponent as doctorIcon } from '../assets/doctorIcon.svg';
 import { ReactComponent as helpIcon } from '../assets/helpIcon.svg';
 import ProfileHeader from '../components/ProfileHeader';
-import Records from '../components/Appoinsment';
 import Profile from '../components/Profile';
-import Appoinsments from '../components/Appoinsments';
+import Appointments from '../components/Appointments';
 
 const items = [
   {
@@ -103,7 +100,7 @@ const Account = () => {
             <Route path="/account/messages"><>Messages</></Route>
             <Route path="/account/test"><>Test</></Route>
             <Route path="/account/goodToKnow"><>goodToKnow</></Route>
-            <Route path="/account/appointsments"><Appoinsments /></Route>
+            <Route path="/account/appointments"><Appointments /></Route>
           </Switch>
         </div>
       </div>
@@ -112,5 +109,3 @@ const Account = () => {
 };
 
 export default Account;
-
-// { /* <button type="button" className="btn btn-success" onClick={() => dispatch(asyncActions.logout())}>Logout</button> */ }

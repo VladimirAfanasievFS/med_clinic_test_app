@@ -1,3 +1,7 @@
+/* eslint-disable no-param-reassign */
+import { createSlice } from '@reduxjs/toolkit';
+import { reject, whereEq } from 'ramda';
+
 const appointments = [
   {
     id: 1,
@@ -85,4 +89,18 @@ const appointments = [
   },
 ];
 
-export default appointments;
+const slice = createSlice({
+  name: 'appointments',
+  initialState: appointments,
+  reducers: {
+    deleteAppoinstmentWithId: (state, action) => {
+      const result = reject(whereEq({ id: action.payload }), state);
+      return result;
+    },
+  },
+  extraReducers: {
+  },
+});
+
+export const { actions } = slice;
+export default slice.reducer;
