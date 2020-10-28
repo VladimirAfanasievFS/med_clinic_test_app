@@ -25,10 +25,10 @@ const Appointments = () => {
   const isEmptyAppointments = currentAppointments.length === 0;
   return (
     <>
-      <div className="p-2 d-flex">
+      <div className="p-2">
         <div>
           <NavLink to="" className="ml-2 text-dark">
-            <ArrowLeft className="m-2" />
+            <ArrowLeft className="mr-2" />
             Мои записи
           </NavLink>
         </div>
