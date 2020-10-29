@@ -1,24 +1,30 @@
+Личный кабинет пользователя в медицинской клинике. Реализованы экраны:
+- авторизация пользователя
+- регистрация пользователя
+- личный кабинет с возможностью просматривать записи с отображением на календаре, атакже отменять их
+Проект на фреймворке React с иcпользованием Redux . Redux с использованием redux tollkit. Валидация - formik+yup. Стек технологий : React router dom,Bootstrap, React, Redux-tolkit, formik, yup,
+
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60138143/91989761-8fd15180-ed39-11ea-8a83-645f92507c2d.png" width="120" title="My dotfiles">
+  ![image](https://user-images.githubusercontent.com/57991929/97564135-2a29da80-19f5-11eb-8cea-debdac243472.png)
   <br>
 </p>
 
-![header-min](https://user-images.githubusercontent.com/60138143/92312584-cffb3300-efca-11ea-9e0c-5a0dffc3955c.png)
 
 ### 🖥 Screenshots
 
 <details>
  <summary>Nvim Startify Which-keys</summary>
-   <img width="1593" alt="fullscreen" src="https://user-images.githubusercontent.com/60138143/92312171-046cf000-efc7-11ea-9ee0-b594f7eb255d.png">
-   <img width="1593" alt="startify" src="https://user-images.githubusercontent.com/60138143/92312169-046cf000-efc7-11ea-8e21-046a6ea90067.png">
-   <img width="1593" alt="html" src="https://user-images.githubusercontent.com/60138143/92312166-02a32c80-efc7-11ea-913d-b1551e220649.png">
+   ![image](https://user-images.githubusercontent.com/57991929/97564213-4594e580-19f5-11eb-8394-d4d402b128fc.png) 
+   ![image](https://user-images.githubusercontent.com/57991929/97564263-59d8e280-19f5-11eb-9381-369de0e54a16.png)
+   ![image](https://user-images.githubusercontent.com/57991929/97564312-72e19380-19f5-11eb-8e17-7f1bf10c9ae7.png)
 </details>
 
-### `npm start`
+###  make install
+Установить все необходимые зависимости
+### `make start`
+Запустить приложение в режиме разработки.<br />
+Открыть [http://localhost:3000](http://localhost:3000) для просмотра в браузере
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Демо версия приложения
+https://med-clinic-test-app.herokuapp.com/signUp
 
