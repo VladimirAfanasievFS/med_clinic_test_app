@@ -14,10 +14,10 @@
 </p>
 
 
-### 🖥 Screenshots
+
 
 <details>
- <summary>Экраны</summary>
+    <summary>🖥 <strong>Screenshots</strong></summary>
     <img src="https://user-images.githubusercontent.com/57991929/97564213-4594e580-19f5-11eb-8394-d4d402b128fc.png" width="600" title="profile">
     <img src="https://user-images.githubusercontent.com/57991929/97564263-59d8e280-19f5-11eb-9381-369de0e54a16.png" width="600" title="auth">
     <img src="https://user-images.githubusercontent.com/57991929/97564312-72e19380-19f5-11eb-8e17-7f1bf10c9ae7.png" width="600" title="registration">
