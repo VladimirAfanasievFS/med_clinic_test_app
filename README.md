@@ -5,7 +5,7 @@
 Проект на фреймворке React с иcпользованием Redux . Redux с использованием redux tollkit. Валидация - formik+yup. Стек технологий : React router dom,Bootstrap, React, Redux-tolkit, formik, yup,
 
 <p align="center">
-  ![image](https://user-images.githubusercontent.com/57991929/97564135-2a29da80-19f5-11eb-8cea-debdac243472.png)
+    <img src="https://user-images.githubusercontent.com/57991929/97564135-2a29da80-19f5-11eb-8cea-debdac243472.png" width="120" title="profile">
   <br>
 </p>
 
@@ -14,9 +14,9 @@
 
 <details>
  <summary>Экраны</summary>
-   ![image](https://user-images.githubusercontent.com/57991929/97564213-4594e580-19f5-11eb-8394-d4d402b128fc.png) 
-   ![image](https://user-images.githubusercontent.com/57991929/97564263-59d8e280-19f5-11eb-9381-369de0e54a16.png)
-   ![image](https://user-images.githubusercontent.com/57991929/97564312-72e19380-19f5-11eb-8e17-7f1bf10c9ae7.png)
+    <img src="https://user-images.githubusercontent.com/57991929/97564213-4594e580-19f5-11eb-8394-d4d402b128fc.png" width="120" title="profile">
+    <img src="https://user-images.githubusercontent.com/57991929/97564263-59d8e280-19f5-11eb-9381-369de0e54a16.png" width="120" title="auth">
+    <img src="https://user-images.githubusercontent.com/57991929/97564312-72e19380-19f5-11eb-8e17-7f1bf10c9ae7.png" width="120" title="registration">
 </details>
 
 ###  make install
