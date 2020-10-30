@@ -23,13 +23,13 @@
     <img src="https://user-images.githubusercontent.com/57991929/97564312-72e19380-19f5-11eb-8e17-7f1bf10c9ae7.png" width="600" title="registration">
 </details>
 
-### Установка и запуск
+## Установка и запуск
 ### `make install`
 Установить все необходимые зависимости
 ### `make start`
 Запустить приложение в режиме разработки.<br />
 Открыть [http://localhost:3000](http://localhost:3000) для просмотра в браузере
 
-### Демо версия приложения
-https://med-clinic-test-app.herokuapp.com/signUp
+## <a href="https://med-clinic-test-app.herokuapp.com/">Демо версия приложения</a>
+
 
